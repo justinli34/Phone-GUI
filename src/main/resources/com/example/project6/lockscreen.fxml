@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap4" prefHeight="680.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project6.Lockscreen">
+   <children>
+      <PasswordField fx:id="passwordBox" layoutX="176.0" layoutY="406.0" onAction="#unlock" promptText="Enter Password" />
+      <Label fx:id="time" layoutX="156.0" layoutY="128.0" prefHeight="90.0" prefWidth="190.0" text="11:30" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Century Schoolbook" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="167.0" layoutY="95.0" prefHeight="41.0" prefWidth="169.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Century Schoolbook" size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

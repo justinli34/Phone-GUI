@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="noteApp" prefHeight="680.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project6.Notepad">
+   <children>
+      <TextArea fx:id="note" layoutX="11.0" layoutY="81.0" prefHeight="524.0" prefWidth="479.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <ColorPicker fx:id="colorPicker" layoutX="14.0" layoutY="46.0" onAction="#changeColor">
+         <value>
+            <Color />
+         </value>
+      </ColorPicker>
+      <Button fx:id="homeButton" layoutX="216.0" layoutY="615.0" mnemonicParsing="false" onAction="#goHome" prefHeight="37.0" prefWidth="46.0" textFill="TRANSPARENT">
+         <graphic>
+            <Circle radius="25.0" stroke="WHITE" strokeLineJoin="ROUND" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5402843601895735">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+         </graphic>
+      </Button>
+      <TextField fx:id="fontSizeBox" layoutX="361.0" layoutY="46.0" onAction="#changeColor" prefHeight="25.0" prefWidth="125.0" promptText="Font Size" />
+      <Label fx:id="time" layoutX="220.0" layoutY="14.0" prefHeight="38.0" prefWidth="61.0" text="12:30" textAlignment="CENTER">
+         <font>
+            <Font name ="Century Schoolbook" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
