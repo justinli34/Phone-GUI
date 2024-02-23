@@ -1,2 +1,2 @@
-# CS12-Phone-Project
+# JavaFX Phone GUI
  Phone app
